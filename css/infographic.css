@@ -41,9 +41,26 @@
   background-color: var(--color-infobox-2-bg);
 }
 
-.my_scale {
-  transition: transform 2s;
-  transform: scale(1.3);
+#proviant:active {
+  background-color: rgb(66, 130, 249); /* Farven mens du trykker på knappen */
+}
+
+#kokosnoed {
+  transition: transform 0.5s ease;
+  transform-origin: center;
   transform-box: fill-box;
-  transform-origin: 50% 50%;
+}
+
+#kokosnoed.stor {
+  transform: scale(5); /* Forstør elementet */
+}
+
+#sos {
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#sos.stor {
+  transform: scale(5); /* Forstør elementet */
 }
