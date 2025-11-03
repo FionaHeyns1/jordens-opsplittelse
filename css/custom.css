@@ -31,10 +31,10 @@
   --color-text-inverted: #fffae2;
 
   /*  Marginer */
-  --margin-head-bottom: 50px;
+  --margin-head-bottom: 60px;
 
   /* Borders */
-  --border-radius: 30px;
+  --border-radius: 37px;
 
   /* Cards */
   --color-card-bg: #ffff;
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #fff;
+  --color-infobox-1-bg: #fceb94;
+  --color-infobox-2-bg: #def5db;
 }
