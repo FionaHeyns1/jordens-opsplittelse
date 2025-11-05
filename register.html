@@ -19,11 +19,13 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> JORDENS OPSPLITTELSE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li>
+            <a class="menuItem" href="instruction.html">Du er strandet </a>
+          </li>
+          <li><a class="menuItem" href="register.html">Bliv redet</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -39,6 +41,36 @@
         <article id="form-info">
           <h2>Overskrift</h2>
           <p>Tekst</p>
+
+          <section class="form-group">
+            <div>
+              <label for="first_name">Fulde navn</label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+            <div>
+              <label for="telefon_nr">Telefon nr.</label>
+              <input
+                type="telefon_nr"
+                id="telefon_nr"
+                name="telefon_nr"
+                required
+              />
+            </div>
+            <div>
+              <label for="Koon">Køn</label>
+              <input type="koon" id="koon" name="koon" required />
+            </div>
+
+            <div>
+              <label for="cpr">CPR. nr</label>
+              <input type="cpr" id="cpr" name="cpr" required />
+            </div>
+
+            <div>
+              <label for="dag">Fødselsdag</label>
+              <input type="dag" id="dag" name="dag" required />
+            </div>
+          </section>
         </article>
         <form id="webform"></form>
       </section>
