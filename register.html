@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -36,49 +36,206 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1 class="bliv_redet">BLIV REDET - VI SAMLER DIG OP</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
+          <h2>Udfyld de nødvendige informationer, for at få hjælp;</h2>
           <p>Tekst</p>
+        </article>
 
-          <section class="form-group">
-            <div>
-              <label for="first_name">Fulde navn</label>
-              <input type="text" id="first_name" name="first_name" required />
+        <form id="webform">
+          <div class="form-group">
+            <label for="first_name"> Fulde navn </label>
+            <input type="text" id="first_name" name="first_name" required />
+
+            <p class="error-message" id="name-error">Indtast oplysninger</p>
+          </div>
+          <div class="form-group">
+            <label for="telefon_nr"> Telefon nr. </label>
+            <input type="tel" id="telefon_nr" name="telefon_nr" required />
+            <p class="error-message" id="telefon-error">Indtast oplysninger</p>
+          </div>
+
+          <div class="form-group">
+            <label for="adresse">Adresse </label>
+            <input type="text" id="adresse" name="adresse" required />
+
+            <p class="error-message" id="adresse-error">Indtast oplysninger</p>
+          </div>
+
+          <div class="form-group">
+            <label for="Koon"> Køn </label>
+            <input type="text" id="gender" name="gender" required />
+
+            <p class="error-message" id="koon-error">Indtast oplysninger</p>
+          </div>
+
+          <div class="form-group">
+            <label for="cpr">CPR.nr </label>
+            <input type="password" id="cpr" name="cpr" required />
+            <p class="error-message" id="cpr-error">Indtast oplysninger</p>
+          </div>
+
+          <div class="form-group">
+            <label class="dag" for="dag"> Fødselsdag </label>
+
+            <input
+              type="date"
+              id="dag"
+              name="dag"
+              aria-describedby="dag"
+              required
+            />
+
+            <p class="error-message" id="dag-error">Indtast oplysninger</p>
+          </div>
+          <div class="check-boxes">
+            <div class="overskrift_form">
+              <h2 class="overskrift_form">Ressourcer på den ø du er på:</h2>
             </div>
-            <div>
-              <label for="telefon_nr">Telefon nr.</label>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Palme"
+                />
+                Palme
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Kokos"
+                />
+                Kokos
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Muslinger"
+                />
+                Muslinger
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Drikkevand"
+                />
+                Drikkevand
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Drivtømmer"
+                />
+                Drivtømmer
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="mad"
+                />
+                Mad
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="drivtømmer"
+                />
+                Drivtømmer
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Plast/affald"
+                />
+                plast/affald
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="first_name"
+                  name="first_name"
+                  value="Palme"
+                />
+                Palme
+              </label>
+            </div>
+          </div>
+
+          <div class="overskrift_form">
+            <h2 class="overskrift_form">
+              Beskrivelse af dine omgivelser, så vi kan finde dig:
+            </h2>
+          </div>
+          <div class="form-group-text">
+            <textarea id="besked" name="besked" rows="5"></textarea>
+          </div>
+
+          <div class="form-group-accept">
+            <label for="accept_terms">
               <input
-                type="telefon_nr"
-                id="telefon_nr"
-                name="telefon_nr"
+                type="checkbox"
+                id="accept_terms"
+                name="accept_terms"
+                value="yes"
+                aria-describedby="terms-error"
                 required
               />
-            </div>
-            <div>
-              <label for="Koon">Køn</label>
-              <input type="koon" id="koon" name="koon" required />
-            </div>
+              Accept terms
+            </label>
+            <p class="error-message" id="terms-error"></p>
 
-            <div>
-              <label for="cpr">CPR. nr</label>
-              <input type="cpr" id="cpr" name="cpr" required />
-            </div>
-
-            <div>
-              <label for="dag">Fødselsdag</label>
-              <input type="dag" id="dag" name="dag" required />
-            </div>
-          </section>
-        </article>
-        <form id="webform"></form>
+            <button>Sign up</button>
+          </div>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+
+        <div>
+          <p>First name: <span id="first_name_output"></span></p>
+          <p>Telefon nr.: <span id="first_name_output"></span></p>
+          <p>Adresse: <span id="first_name_output"></span></p>
+          <p>Køn: <span id="first_name_output"></span></p>
+          <p>CPR nr.: <span id="first_name_output"></span></p>
+          <p>Fødselsdag: <span id="first_name_output"></span></p>
+          <p>Ressourcer på øen: <span id="ressourcer_name_output"></span></p>
+          <p>Beskrivelse: <span id="beskrivelse_name_output"></span></p>
+        </div>
       </section>
     </main>
     <footer>
@@ -109,5 +266,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/form.js"></script>
   </body>
 </html>
