@@ -41,8 +41,50 @@
   background-color: var(--color-infobox-2-bg);
 }
 
-.my_scale {
-  transform: scale(1.3);
-  transform: fill-box;
-  transform-origin: 50% 50%;
+#proviant:active {
+  background-color: rgb(66, 130, 249); /* Farven mens du trykker på knappen */
+}
+
+#lejr:active {
+  background-color: rgb(66, 130, 249); /* Farven mens du trykker på knappen */
+}
+
+#raab:active {
+  background-color: rgb(66, 130, 249); /* Farven mens du trykker på knappen */
+}
+
+#kokosnoed {
+  display: block;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#kokosnoed.stor {
+  transform: scale(8); /* Forstør elementet */
+}
+
+#sos1 {
+  display: block;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#sos1.stor {
+  transform: scale(5); /* Forstør elementet */
+}
+
+#overskrift_faktaboks {
+  font-size: 1.7em;
+}
+
+#trae_i_vand {
+  transition: transform 0.7s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#trae_i_vand.stor {
+  transform: translate(0, -50px) scale(7);
 }
