@@ -19,6 +19,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
+          <img class="logo" src="svg/logo-1.svg" alt="Logo" />
           <a href="index.html"> JORDENS OPSPLITTELSE </a>
         </div>
         <ul class="menu">
@@ -52,7 +53,7 @@
           </div>
           <div class="form-group">
             <label for="telefon_nr"> Telefon nr. </label>
-            <input type="tel" id="telefon_nr" name="telefon_nr" required />
+            <input type="tel" id="telefon" name="telefon" required />
             <p class="error-message" id="telefon-error">Indtast oplysninger</p>
           </div>
 
@@ -65,7 +66,7 @@
 
           <div class="form-group">
             <label for="Koon"> Køn </label>
-            <input type="text" id="gender" name="gender" required />
+            <input type="text" id="koon" name="koon" required />
 
             <p class="error-message" id="koon-error">Indtast oplysninger</p>
           </div>
@@ -228,11 +229,11 @@
 
         <div>
           <p>First name: <span id="first_name_output"></span></p>
-          <p>Telefon nr.: <span id="first_name_output"></span></p>
-          <p>Adresse: <span id="first_name_output"></span></p>
-          <p>Køn: <span id="first_name_output"></span></p>
-          <p>CPR nr.: <span id="first_name_output"></span></p>
-          <p>Fødselsdag: <span id="first_name_output"></span></p>
+          <p>Telefon nr.: <span id="telefon_output"></span></p>
+          <p>Adresse: <span id="adresse_output"></span></p>
+          <p>Køn: <span id="koon_output"></span></p>
+          <p>CPR nr.: <span id="cpr_output"></span></p>
+          <p>Fødselsdag: <span id="dag_output"></span></p>
           <p>Ressourcer på øen: <span id="ressourcer_name_output"></span></p>
           <p>Beskrivelse: <span id="beskrivelse_name_output"></span></p>
         </div>
