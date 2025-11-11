@@ -13,6 +13,16 @@
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
+  .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
   /* Global menu */
   --color-menu-bg: #6f90eb;
   /* Links */
