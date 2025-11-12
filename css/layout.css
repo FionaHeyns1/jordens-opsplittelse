@@ -60,6 +60,62 @@ footer ul {
   gap: 0;
 }
 
+[popover] {
+  &:popover-open {
+    display: grid;
+    padding: 7em;
+    max-height: 90vh;
+    max-width: 200ch;
+    width: 90vw;
+    margin-left: 4.5em;
+    margin-top: 5em;
+  }
+  &::backdrop {
+    background: #0008;
+  }
+}
+
+.teaser2-indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.teaser2 {
+  grid-column: 2/3;
+}
+
+.p1 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.fp_tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+  line-height: normal;
+}
+p {
+  grid-column: 1/-1;
+}
+h3 {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+.teaser1 {
+  max-height: 300px;
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  margin-bottom: 3em;
+  object-fit: cover;
+}
+
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;
