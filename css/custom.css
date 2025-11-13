@@ -23,6 +23,20 @@
     height: 50px;
     width: auto;
   }
+  #teaser_overskrift {
+    color: white;
+    padding: 1em;
+  }
+  .popup-button {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: var(--color-cta-card-bg);
+    color: var(--color-text-inverted);
+    text-decoration: none;
+    width: max-content;
+    border-radius: var(--border-radius);
+  }
+
   /* Global menu */
   --color-menu-bg: #6f90eb;
   /* Links */
