@@ -48,37 +48,37 @@
           <div class="form-group">
             <label for="first_name"> Fulde navn </label>
             <input type="text" id="first_name" name="first_name" required />
-
-            <p class="error-message" id="name-error">Indtast oplysninger</p>
+            <p class="error-message" id="name-error">Indtast navn</p>
           </div>
+
           <div class="form-group">
-            <label for="telefon_nr"> Telefon nr. </label>
-            <input type="tel" id="telefon" name="telefon" required />
-            <p class="error-message" id="telefon-error">Indtast oplysninger</p>
+            <label for="telefon"> Telefon nr. </label>
+            <input type="text" id="telefon" name="telefon" required />
+            <p class="error-message" id="telefon-error">Kun tal</p>
           </div>
 
           <div class="form-group">
             <label for="adresse">Adresse </label>
             <input type="text" id="adresse" name="adresse" required />
 
-            <p class="error-message" id="adresse-error">Indtast oplysninger</p>
+            <p class="error-message" id="adresse-error">Indtast adresse</p>
           </div>
 
           <div class="form-group">
-            <label for="Koon"> Køn </label>
+            <label for="koon"> Køn </label>
             <input type="text" id="koon" name="koon" required />
 
-            <p class="error-message" id="koon-error">Indtast oplysninger</p>
+            <p class="error-message" id="koon-error">Vælg dit køn</p>
           </div>
 
           <div class="form-group">
             <label for="cpr">CPR.nr </label>
             <input type="password" id="cpr" name="cpr" required />
-            <p class="error-message" id="cpr-error">Indtast oplysninger</p>
+            <p class="error-message" id="cpr-error">Indtast CPR Nr.</p>
           </div>
 
           <div class="form-group">
-            <label class="dag" for="dag"> Fødselsdag </label>
+            <label for="dag"> Fødselsdag </label>
 
             <input
               type="date"
@@ -88,110 +88,66 @@
               required
             />
 
-            <p class="error-message" id="dag-error">Indtast oplysninger</p>
+            <p class="error-message" id="dag-error">Indtast din fødselsdag</p>
           </div>
           <div class="check-boxes">
             <div class="overskrift_form">
               <h2 class="overskrift_form">Ressourcer på den ø du er på:</h2>
             </div>
+
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Palme"
-                />
+                <input type="checkbox" name="ting" value="Palme" />
                 Palme
               </label>
             </div>
 
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Kokos"
-                />
+                <input type="checkbox" name="ting" value="Kokos" />
                 Kokos
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Muslinger"
-                />
+                <input type="checkbox" name="ting" value="Muslinger" />
                 Muslinger
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Drikkevand"
-                />
+                <input type="checkbox" name="ting" value="Drikkevand" />
                 Drikkevand
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Drivtømmer"
-                />
+                <input type="checkbox" name="ting" value="Drivtømmer" />
                 Drivtømmer
               </label>
             </div>
 
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="mad"
-                />
+                <input type="checkbox" name="ting" value="mad" />
                 Mad
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="drivtømmer"
-                />
+                <input type="checkbox" name="ting" value="drivtømmer" />
                 Drivtømmer
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Plast/affald"
-                />
+                <input type="checkbox" name="ting" value="Plast/affald" />
                 plast/affald
               </label>
             </div>
             <div class="form-group">
               <label>
-                <input
-                  type="checkbox"
-                  id="first_name"
-                  name="first_name"
-                  value="Palme"
-                />
+                <input type="checkbox" name="ting" value="Palme" />
                 Palme
               </label>
             </div>
@@ -203,7 +159,7 @@
             </h2>
           </div>
           <div class="form-group-text">
-            <textarea id="besked" name="besked" rows="5"></textarea>
+            <textarea id="besked" name="besked"></textarea>
           </div>
 
           <div class="form-group-accept">

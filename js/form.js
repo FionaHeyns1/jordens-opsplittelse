@@ -10,6 +10,8 @@ const telefonOutput = document.querySelector("#telefon_output");
 const koonOutput = document.querySelector("#koon_output");
 const cprOutput = document.querySelector("#cpr_output");
 const dagOutput = document.querySelector("#dag_output");
+const tingOutput = document.querySelector("#ressourcer_name_output");
+const beskedOutput = document.querySelector("#beskrivelse_name_output");
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -30,6 +32,11 @@ function handleSubmit(event) {
 
   const dag = formData.get("dag");
 
+  const ting = formData.getAll("ting");
+  console.log("hvad mon exposure er;", ting);
+
+  const besked = formData.get("besked");
+
   /* værdier der skal over i mit output element*/
   firstNameOutput.textContent = firstName;
 
@@ -42,6 +49,10 @@ function handleSubmit(event) {
   cprOutput.textContent = cpr;
 
   dagOutput.textContent = dag;
+
+  tingOutput.textContent = ting.join(", ");
+
+  beskedOutput.textContent = besked;
 
   /* fuktionaliteter*/
   function cancelPopup(event) {
@@ -58,5 +69,5 @@ function handleSubmit(event) {
 
 form.addEventListener("invalid", cancelPopup, true);
 form.addEventListener("submit", handleSubmit);
-supportYes.addEventListener("click", toggleOn);
-supportNo.addEventListener("click", toggleOff);
+// supportYes.addEventListener("click", toggleOn);
+// supportNo.addEventListener("click", toggleOff);
