@@ -108,6 +108,12 @@ textarea {
 
 .error-message {
   display: none;
+  color: red;
+  font-size: 0.9rem;
+}
+
+#name-error {
+  display: none;
 }
 
 .form-group:has(:required) {
@@ -117,15 +123,16 @@ textarea {
   }
 }
 
-/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+/* Den røde kant omkring input feltet, hvis det er ugyldigt */
+
 .form-group:has(:user-invalid) {
   input {
     outline: 3px solid #f005;
-    border-color: darkred;
+    border-color: rgb(156, 5, 5);
   }
-}
-.error-message {
-  display: block;
+  input:invalid + .error-message {
+    display: block;
+  }
 }
 
 .form-group-accept {
