@@ -24,6 +24,12 @@ footer {
   display: grid;
   gap: 10px;
 }
+
+.sub_img {
+  max-width: 260px;
+  margin-top: 1.5em;
+}
+
 header nav,
 footer nav {
   display: flex;
