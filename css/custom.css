@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #addaff7c; /* page background /*
+  --color-bg: #6ccae97c; /* page background /*
 
   /* Header */
   --color-head-bg: #fffae2;
@@ -30,11 +30,20 @@
   .popup-button {
     display: inline-block;
     padding: 0.4rem 1rem;
-    background-color: var(--color-cta-card-bg);
+
     color: var(--color-text-inverted);
     text-decoration: none;
     width: max-content;
     border-radius: var(--border-radius);
+    border-color: none;
+  }
+
+  h1 {
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  .sub {
+    margin-left: 1em;
   }
 
   /* Global menu */
@@ -68,8 +77,8 @@
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
   --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
+  --color-news-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg: #ff4b00;
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -93,4 +102,11 @@
   --color-info-bg: #fff;
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #def5db;
+}
+
+footer {
+  background-color: #6f90eb;
+  border-radius: 20px;
+  padding: 2em;
+  margin-top: 6em;
 }
