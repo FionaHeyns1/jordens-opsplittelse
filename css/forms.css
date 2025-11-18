@@ -60,9 +60,14 @@ input {
   grid-column: 1 / 2;
 }
 
+.sign-up-button {
+  background-color: light-dark(white, black);
+  color: light-dark(black, white);
+}
+
 #webform {
   margin-top: 5em;
-  background-color: #fffae2;
+  background-color: light-dark(#fffae2, #f28900);
   padding: 2em;
   border-radius: 30px;
 }
@@ -143,10 +148,10 @@ textarea {
 
 button {
   background-color: black;
-  color: white;
+  color: black;
 }
 
 #form-summary {
-  background-color: #fffae2;
+  background-color: light-dark(#fffae2, #f28900);
   margin-top: 7.7em;
 }

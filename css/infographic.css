@@ -3,8 +3,9 @@
 }
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
+  background-color: light-dark(white, black);
   padding: 20px 0;
+  color: light-dark(black, white);
 }
 .info-graphic {
   border-radius: 0;
@@ -16,6 +17,9 @@
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
+}
+
+#proviant {
 }
 .info-text h3 {
   font-size: 0.8rem;
