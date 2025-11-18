@@ -3,16 +3,32 @@
   --color-bg: #6ccae97c; /* page background /*
 
   /* Header */
-  --color-head-bg: #fffae2;
+  --color-head-bg: light-dark(#fffae2, #f28900);
 
   .bliv_redet {
     color: black;
   }
   /* Logotype */
   --color-logotype-bg: #000000;
-  --color-text-logotype: #fffae2;
+  --color-text-logotype: light-dark(#fffae2, #f28900);
   --font-logotype-size: 2rem;
 
+  #toggle {
+    max-width: 10em;
+    max-height: 5em;
+    padding: 0.2em;
+    margin-left: 1.5em;
+    background-color: light-dark(#fffae2, #f28900);
+  }
+
+  .info-box {
+    padding: 2em;
+  }
+  .sub {
+    font-size: 1.2em;
+    padding: 1em;
+    margin-right: 2em;
+  }
   .logo {
     max-width: 100%;
     height: auto;
@@ -47,9 +63,9 @@
   }
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6f90eb, #002ea1);
   /* Links */
-  --color-link-bg: #fffae2;
+  --color-link-bg: light-dark(#fffae2, #f28900);
   --color-link-hover: #fff; /* used */
   --color-link-active: #000000; /* used */
   --border-radius-links: 70px;
@@ -60,7 +76,7 @@
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
   --color-headline-bg: #000000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-text-page: light-dark(#fffae2, #f28900);
 
   /* Tekst */
   --color-text: #000;
@@ -76,9 +92,9 @@
   --color-card-bg: #ffff;
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: light-dark(#fffae2, #f28900);
   --color-news-bg-inverted: #6f90eb;
-  --color-cta-newscard-bg: #ff4b00;
+  --color-cta-newscard-bg: light-dark(#ff4b00, #002ea1);
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -105,8 +121,35 @@
 }
 
 footer {
-  background-color: #6f90eb;
+  background-color: light-dark(#6f90eb, #002ea1);
   border-radius: 20px;
   padding: 2em;
   margin-top: 6em;
+}
+
+/* CSS Starter er tilføjet */
+html {
+  --color-heading: light-dark(#5000ca, #e0d3ff);
+  --color-text: light-dark(#555, #cdc7dc);
+
+  --color-bg: light-dark(#fff, #222);
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+button {
+  border-radius: 30px;
+  background-color: light-dark(#fff, #f28900);
+  padding: 0.2em;
+  border-color: light-dark(#fffae2, #f28900);
+  margin-right: 2em;
 }

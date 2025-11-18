@@ -30,10 +30,11 @@ function storNoed() {
   }
 
   if (kokosnoed.classList.contains("stor")) {
-    placeholder.textContent = "Info";
+    placeholder.textContent =
+      "At finde mad på en øde ø handler om at bruge naturen klogt: søg efter skaldyr langs kysten, kig efter sikre frugter og planter inde på øen, og brug simple redskaber til at fange smådyr eller fisk. Insekter kan også være en hurtig proteinkilde. Med opmærksomhed og forsigtighed kan man finde det nødvendige for at klare sig.";
   } else {
     placeholder.textContent =
-      "Jorden som vi kender den, er ødelagt! Et ENORMT jordskælv, har rykket de tektoniske plader i små stykker, og har nu efterladt menneskeheden, fordelt over flere tusinder af små øer. Her får du de mest nødvendige tips, sådan at du kan sikre din egen overlevelse, i forfærdelige situation.";
+      "Bliv klar til naturens udfordringer! Lær at finde mad og vand, bygge læ og bål, og hold dig sikker, selv på en øde ø.";
   }
 }
 
@@ -48,10 +49,11 @@ function storsos1() {
   }
 
   if (sos1.classList.contains("stor")) {
-    placeholder.textContent = "Info";
+    placeholder.textContent =
+      "En flugtplan fra en øde ø begynder med at skabe overblik: find et højt punkt for at vurdere afstand til fastlandet og mulige strømretninger. Byg derefter et robust signal—som et stort bål eller et mønster af sten på stranden—så forbipasserende skibe eller fly lettere kan opdage dig. Samtidig kan du konstruere en simpel tømmerflåde af drivtømmer, grene og lianer, men kun bruge den, hvis vejr og hav er stabile. Saml vand og proviant til turen og vent på det rette tidspunkt. Med tålmodighed og velovervejet forberedelse øges chancen for at slippe sikkert væk.";
   } else {
     placeholder.textContent =
-      "Jorden som vi kender den, er ødelagt! Et ENORMT jordskælv, har rykket de tektoniske plader i små stykker, og har nu efterladt menneskeheden, fordelt over flere tusinder af små øer. Her får du de mest nødvendige tips, sådan at du kan sikre din egen overlevelse, i forfærdelige situation.";
+      "Bliv klar til naturens udfordringer! Lær at finde mad og vand, bygge læ og bål, og hold dig sikker, selv på en øde ø.";
   }
 }
 
@@ -66,10 +68,11 @@ function storlejr() {
   }
 
   if (trae_i_vand.classList.contains("stor")) {
-    placeholder.textContent = "Info";
+    placeholder.textContent =
+      " Vælg et tørt, vindbeskyttet sted lidt hævet fra stranden for at undgå oversvømmelse. Byg et solidt læ af grene, blade eller andet naturmateriale, der kan holde regn og vind ude. Skab en sikker bålplads tæt på, men med god afstand til læet, og omring den med sten. Saml og organiser vand, mad og værktøj, så du altid ved, hvor tingene er. Lav også et soveområde med blade eller tang for isolering og komfort.";
   } else {
     placeholder.textContent =
-      "Jorden som vi kender den, er ødelagt! Et ENORMT jordskælv, har rykket de tektoniske plader i små stykker, og har nu efterladt menneskeheden, fordelt over flere tusinder af små øer. Her får du de mest nødvendige tips, sådan at du kan sikre din egen overlevelse, i forfærdelige situation.";
+      "Bliv klar til naturens udfordringer! Lær at finde mad og vand, bygge læ og bål, og hold dig sikker, selv på en øde ø.";
   }
 }
 
